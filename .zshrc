@@ -49,18 +49,19 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Users/stanzheng/google-cloud-sdk/bin:$PATH"
+#aws
+export PATH="/Users/stanzheng/.local/lib/aws/bin/aws:$PATH"
 
-
+#NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
 
+#fake texting
 textme() {
   curl http://textbelt.com/text -d number=$1 -d "message=$2"                                           }
 alias git=hub
 
+#using Go
 export GOPATH=$HOME/go
 export PATH=$HOME/go/bin/bin:$PATH
-source $ZSH/oh-my-zsh.sh
 
-#git aliases
-[alias]
-merge-to = "!gitmergeto() { export tmp_branch=`git branch | grep '* ' | tr -d '* '` && git checkout $1 && git merge $tmp_branch && git checkout $tmp_branch; unset tmp_branch; }; gitmergeto"
+source $ZSH/oh-my-zsh.sh
