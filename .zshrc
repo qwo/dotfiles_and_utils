@@ -82,6 +82,8 @@ source $ZSH/oh-my-zsh.sh
 #golang
 export GOPATH=/Users/stanleyzheng/Code/golang
 
+#java
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/stanleyzheng/Code/tools/google-cloud-sdk/path.zsh.inc'
