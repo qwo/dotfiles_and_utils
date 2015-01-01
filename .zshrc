@@ -87,3 +87,11 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/stanleyzheng/Code/tools/google-cloud-sdk/path.zsh.inc'
+
+
+#python virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
