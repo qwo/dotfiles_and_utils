@@ -95,3 +95,12 @@ source /usr/local/bin/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+
+
+#nate jenv
+#install different versions from oracle use this 
+#ex: use-java 7, use-java 8
+use-java () {
+   export JAVA_HOME=`/usr/libexec/java_home -v 1.$1`
+}
