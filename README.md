@@ -1,6 +1,8 @@
 dotfiles
 ========
-
+- .vimrc
+- .bashrc
+- .ssh/config
 Basic dotfiles
 
 Commands
