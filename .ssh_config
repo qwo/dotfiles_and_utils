@@ -1,0 +1,11 @@
+
+host oducs
+  User szheng
+  Hostname atria.cs.odu.edu
+
+Host github
+	User stanzheng
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/github/id_rsa.pub
+
