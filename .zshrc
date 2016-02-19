@@ -105,12 +105,14 @@ use-java () {
    export JAVA_HOME=`/usr/libexec/java_home -v 1.$1`
 }
 
-#boot2docker
-#export DOCKER_CERT_PATH=/Users/stanleyzheng/.boot2docker/certs/boot2docker-vm
-#export DOCKER_TLS_VERIFY=1
-#export DOCKER_HOST=tcp://192.168.59.103:2376
+#virtualenv
+export WORKON_HOME=~/Envs
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
 
-# kitematic
-    export DOCKER_HOST=tcp://192.168.99.100:2376
-    export DOCKER_CERT_PATH=~/.docker/machine/machines/dev/
-    export DOCKER_TLS_VERIFY=1
+# google app enginge etc.
+export PATH=$PATH:/Users/stanleyzheng/Code/google_appengine
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias ssaver="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
