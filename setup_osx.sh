@@ -25,7 +25,7 @@ brew install wget
 ## install docker for mac
 
 # browser
-brew cask install firefox-aurora
+brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew install git-extras
