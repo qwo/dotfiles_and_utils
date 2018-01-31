@@ -24,6 +24,7 @@ brew install wget
 brew install fzf
 
 ## install docker for mac
+brew cask install docker
 
 # browser
 brew cask install firefox
@@ -38,4 +39,5 @@ brew cask install skype
 brew cask install spotify
 brew cask install bitbar
 
+# install some bash tools
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
