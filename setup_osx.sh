@@ -21,6 +21,7 @@ brew install docker
 brew install docker-compose
 brew install jq # reads json on cli
 brew install wget
+brew install fzf
 
 ## install docker for mac
 
@@ -36,3 +37,5 @@ brew cask install dropbox
 brew cask install skype
 brew cask install spotify
 brew cask install bitbar
+
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
