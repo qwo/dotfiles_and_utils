@@ -8,6 +8,7 @@
 # homebrew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
+brew install mas
 
 # development
 brew cask install iterm2
@@ -43,3 +44,6 @@ brew cask install tomighty
 
 # install some bash tools
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+
+# install dev tools
+brew install node
