@@ -40,7 +40,9 @@ brew cask install skype
 brew cask install spotify
 brew cask install bitbar
 brew cask install tomighty
-    
+
+# copy over bash profile
+cp .bashrc ~/.bashc
 
 # install some bash tools
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
