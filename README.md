@@ -22,5 +22,6 @@ git log --raw | grep "^Author: " | sort | uniq -c
 
 
 - Clone all github repos from an org
-
+```
 wget -qO- https://api.github.com/orgs/ORG/repos | jq ".[].html_url" | xargs -L 1 git clone
+```
