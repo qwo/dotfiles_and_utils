@@ -7,7 +7,6 @@
 
 # homebrew-cask
 brew tap phinze/homebrew-cask
-brew install brew-cask
 brew install mas
 
 # development
