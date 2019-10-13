@@ -1,11 +1,22 @@
 dotfiles
 ========
-- .vimrc
-- .bashrc
-- .ssh/config
-Basic dotfiles
+Dotfiles for my computer and utilities. Also some configurations for the current computers I'm currently using and server stuff.
 
-Commands
+PAST
+  - OSX
+NOW 
+   - Lenovo Carbon X1 Black 
+      - MX Linux
+      - Windows 10 
+   - Server 
+       - Debian
+       - Ubuntu 
+
+
+
+## Commands
+Interesting commands you can use. 
+
 - Directory Tabs to (2) spaces -> *does not recurse*
 ```
 find . -name '*.js' ! -type d -exec bash -c 'expand -t 2 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
