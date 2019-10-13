@@ -1,6 +1,8 @@
 dotfiles
 ========
-Dotfiles for my computer and utilities. Also some configurations for the current computers I'm currently using and server stuff.
+Dotfiles for my computer and utilities. 
+
+These are configurations for the current computers I'm currently using and server stuff.
 
 PAST
   - OSX
