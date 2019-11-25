@@ -33,7 +33,7 @@ brew cask install google-chrome-canary
 brew install git-extras
 
 # other
-brew cask install spectacle
+brew cask install rectangle
 brew cask install dropbox
 brew cask install skype
 brew cask install spotify
