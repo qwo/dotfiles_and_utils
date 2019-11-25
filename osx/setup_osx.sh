@@ -11,20 +11,14 @@ brew install mas
 
 # development
 brew cask install iterm2
-brew cask install source-tree
-brew cask install virtualbox
 brew cask install visual-studio-code
-brew cask install postwoman
 
 # tools
 brew install docker
-brew install docker-compose
 brew install jq # reads json on cli
 brew install wget
 brew install fzf
 
-## install docker for mac
-brew cask install docker
 
 # browser
 brew cask install firefox
