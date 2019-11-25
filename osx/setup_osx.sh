@@ -14,7 +14,7 @@ brew cask install iterm2
 brew cask install source-tree
 brew cask install virtualbox
 brew cask install visual-studio-code
-brew cask install postman
+brew cask install postwoman
 
 # tools
 brew install docker
