@@ -29,15 +29,11 @@ brew cask install docker
 # browser
 brew cask install firefox
 brew cask install google-chrome
-brew cask install google-chrome-canary
 brew install git-extras
 
 # other
 brew cask install rectangle
-brew cask install dropbox
-brew cask install skype
 brew cask install spotify
-brew cask install bitbar
 brew cask install tomighty
 
 # copy over bash profile
