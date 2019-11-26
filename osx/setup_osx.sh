@@ -42,3 +42,4 @@ brew install node
 
 # installing GCP
 curl https://sdk.cloud.google.com | bash
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/bash_profile
