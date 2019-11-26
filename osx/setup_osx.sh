@@ -39,6 +39,7 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 
 # install dev tools
 brew install node
+brew install terraform
 
 # installing GCP
 curl https://sdk.cloud.google.com | bash
