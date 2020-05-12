@@ -7,21 +7,18 @@ var rl = require('readline-sync');
 //var prompt = require('prompt');
 
 
-// create the TRANSFEREE account
-var client = github.client({
-  username: process.env.GITHUB_USER,
-  password: process.env.GITHUB_PASS
-});
-var ghme = client.me();
+// create the new host account
+var clienthost = github.client(process.env.HOST_GITHUB);
+var ghme = clienthost.me();
 
-// The account to be transfered from
-var client = github.client(process.env.MY_TOKEN);
+// The account to be transfered to
+var client = github.client(process.env.TRANSFEREE_GITHUB);
 
 //I AM
 ghme.info(function(err, data, headers) {
-  console.log("error: " + err);
+  console.log(data);
   //get your repos
-  client.get('/users/stanzheng/repos', {
+  client.get('/users/stanleyzhengnyc/repos', {
     page: 1,
     per_page: 50
   }, function(err, status, body, headers) {
@@ -34,13 +31,18 @@ ghme.info(function(err, data, headers) {
       var answer = rl.question(reponame + ": " + value.description +
         "\n");
       // move or dont move
-      if (answer === "yes") {
+      if (answer === "y") {
         console.log("moved:\n");
         ghme.fork(value.full_name, function(err, data) {
           console.log("forked and deleted :", reponame, "\n");
           client.repo(reponame).destroy();
         });
-      } else {
+      } 
+      else if (answer === "d") {
+        console.log("deleting me!")
+        ghme.repo(reponame).destroy();
+      }
+      else {
         console.log("no change moving on \n");
       }
       //
