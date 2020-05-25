@@ -14,6 +14,7 @@ NOW
        - Debian
        - Ubuntu 
 
+VSCode Sync Settings
 
 
 ## Commands
