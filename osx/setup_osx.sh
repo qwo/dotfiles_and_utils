@@ -6,7 +6,6 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # homebrew-cask
-brew tap phinze/homebrew-cask
 brew install mas
 
 # development
