@@ -31,7 +31,7 @@ brew cask install spotify
 brew cask install tomighty
 
 # install oh my zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install dev tools
 brew install node
