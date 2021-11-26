@@ -30,12 +30,8 @@ brew cask install rectangle
 brew cask install spotify
 brew cask install tomighty
 
-# copy over bash profile
-cp .bashrc ~/.bashrc
-
-# install some bash tools
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh
+# install oh my zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install dev tools
 brew install node
