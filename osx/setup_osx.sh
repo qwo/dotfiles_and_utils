@@ -10,7 +10,7 @@ brew tap phinze/homebrew-cask
 brew install mas
 
 # development
-brew cask install --cask iterm2
+brew install --cask iterm2
 
 brew install --cask visual-studio-code
 
