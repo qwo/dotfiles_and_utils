@@ -10,8 +10,10 @@ brew tap phinze/homebrew-cask
 brew install mas
 
 # development
-brew cask install iterm2
-brew cask install visual-studio-code
+brew cask install --cask iterm2
+
+brew install --cask visual-studio-code
+
 
 # tools
 brew install docker
@@ -21,14 +23,14 @@ brew install fzf
 
 
 # browser
-brew cask install firefox
-brew cask install google-chrome
+brew install --cask  firefox
+brew install --cask google-chrome
 brew install git-extras
 
 # other
-brew cask install rectangle
-brew cask install spotify
-brew cask install tomighty
+brew install --cask rectangle
+brew install --cask spotify
+brew install --cask tomighty
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
