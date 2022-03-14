@@ -1,0 +1,6 @@
+[user]
+	email = szheng@cyber.nyc.gov
+	name = Stanley Zheng
+
+[includeIf "gitdir:~/Code/personal/"]
+  path = .gitconfig-company_b
