@@ -9,8 +9,6 @@
 brew install mas
 
 # development
-brew install --cask iterm2
-
 brew install --cask visual-studio-code
 
 
@@ -25,6 +23,7 @@ brew install fzf
 brew install --cask  firefox
 brew install --cask google-chrome
 brew install git-extras
+brew install gh
 
 # other
 brew install --cask rectangle
@@ -35,10 +34,11 @@ brew install --cask tomighty
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install dev tools
+brew install python@3.9
 brew install node
 brew install terraform
 brew install pre-commit gawk terraform-docs tflint
 
 # installing GCP
-curl https://sdk.cloud.google.com | bash
-echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/bash_profile
+curl https://sdk.cloud.google.com | bash -y
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
