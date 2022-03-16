@@ -8,27 +8,29 @@
 # homebrew-cask
 brew install mas
 
-# development
-brew install --cask visual-studio-code
 
-
-# tools
+# unix_tools
 brew install docker
 brew install jq # reads json on cli
 brew install wget
 brew install fzf
-
+brew install git-extras
+brew install gh
 
 # browser
 brew install --cask  firefox
 brew install --cask google-chrome
-brew install git-extras
-brew install gh
 
-# other
+# apps / # development
+brew install --cask visual-studio-code
+brew install --cask obsidian
 brew install --cask rectangle
 brew install --cask spotify
 brew install --cask tomighty
+
+## uses mas to install from MAC APP STORE
+# install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
+mas install 937984704
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
