@@ -38,7 +38,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # install dev tools
 brew install python@3.9
 brew install node
-brew install terraform
+brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
 brew install pre-commit gawk terraform-docs tflint
 
 # installing GCP
