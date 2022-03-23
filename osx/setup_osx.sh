@@ -16,6 +16,7 @@ brew install wget
 brew install fzf
 brew install git-extras
 brew install gh
+brew install coreutils
 
 # browser
 brew install --cask firefox
