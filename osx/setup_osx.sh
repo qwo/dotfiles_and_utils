@@ -32,8 +32,8 @@ brew install --cask signal
 brew install tailscale
 
 ## uses mas to install from MAC APP STORE
-# install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
-mas install 937984704
+mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
+mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
