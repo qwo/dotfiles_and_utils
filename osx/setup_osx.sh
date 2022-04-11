@@ -29,6 +29,7 @@ brew install --cask rectangle
 brew install --cask spotify
 brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
 brew install --cask signal
+brew install tailscale
 
 ## uses mas to install from MAC APP STORE
 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
