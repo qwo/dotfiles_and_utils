@@ -16,6 +16,7 @@ brew install wget
 brew install fzf
 brew install git-extras
 brew install gh
+brew install coreutils
 
 # browser
 brew install --cask firefox
@@ -27,10 +28,12 @@ brew install --cask obsidian
 brew install --cask rectangle
 brew install --cask spotify
 brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
+brew install --cask signal
+brew install tailscale
 
 ## uses mas to install from MAC APP STORE
-# install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
-mas install 937984704
+mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
+mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -38,11 +41,12 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # install dev tools
 brew install python@3.9
 brew install node
-brew install terraform
+brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
 brew install pre-commit gawk terraform-docs tflint
+brew install poetry
 
 # installing GCP
-curl https://sdk.cloud.google.com | bash -y
+curl https://sdk.cloud.google.com | bash
 echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
 
 
