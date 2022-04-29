@@ -4,3 +4,9 @@
 
 [includeIf "gitdir:~/Code/personal/"]
   path = .gitconfig-company_b
+[credential "github.com"]
+	useHttpPath = true
+[credential]
+	helper = osxkeychain
+[core]
+	autocrlf = false

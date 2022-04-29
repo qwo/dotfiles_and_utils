@@ -58,7 +58,7 @@ echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
 ## python extention pack https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
 ## AI PILOT https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode
 ## Rainbow CSV https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
-
+# visual studio code
 
 ## BLACK FORMATTING / AUTOPEP8 ??
 
