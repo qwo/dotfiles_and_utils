@@ -1,3 +1,5 @@
 [user]
 name = Stanley Zheng
 email = stanley@zheng.nyc
+[core]
+ sshCommand = ssh -i ~/.ssh/personal/id_rsa
