@@ -45,3 +45,8 @@ wget -qO- https://api.github.com/orgs/ORG/repos | jq ".[].html_url" | xargs -L 1
 ```
 date "+%Y%m%d_%H%M" 
 ```
+
+Run on file change
+``` 
+fswatch . | while read; do functions-framework --target do_work --debug; done)
+```
