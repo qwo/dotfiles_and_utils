@@ -44,6 +44,7 @@ brew install node
 brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
 brew install pre-commit gawk terraform-docs tflint
 brew install poetry
+brew install fswatch
 
 # installing GCP
 curl https://sdk.cloud.google.com | bash
