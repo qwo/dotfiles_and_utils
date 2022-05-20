@@ -11,7 +11,7 @@ brew install mas
 
 
 # unix_tools
-brew install docker
+brew install lima
 brew install jq # reads json on cli
 brew install wget
 brew install fzf
