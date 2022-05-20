@@ -29,6 +29,7 @@ brew install --cask rectangle
 brew install --cask spotify
 brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
 brew install --cask signal
+brew install --cask dbeaver-community
 brew install tailscale
 
 ## uses mas to install from MAC APP STORE
@@ -44,6 +45,7 @@ brew install node
 brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
 brew install pre-commit gawk terraform-docs tflint
 brew install poetry
+brew install fswatch
 
 # installing GCP
 curl https://sdk.cloud.google.com | bash
