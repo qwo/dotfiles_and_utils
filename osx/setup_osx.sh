@@ -29,6 +29,7 @@ brew install --cask rectangle
 brew install --cask spotify
 brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
 brew install --cask signal
+brew install --cask dbeaver-community
 brew install tailscale
 
 ## uses mas to install from MAC APP STORE
