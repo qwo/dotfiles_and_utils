@@ -36,6 +36,7 @@ brew install tailscale
 ## uses mas to install from MAC APP STORE
 mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
 mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
+mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
