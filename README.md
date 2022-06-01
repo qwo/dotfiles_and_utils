@@ -49,4 +49,21 @@ date "+%Y%m%d_%H%M"
 Run on file change
 ``` 
 fswatch . | while read; do functions-framework --target do_work --debug; done)
+
+```
+
+Unilateral Rsync
+```
+# alias run_rsync='rsync --rsync-path /usr/bin/rsync -azP --exclude ".*/" --exclude ".*" --exclude "tmp/" --exclude "*venv/*" --exclude "/home/szheng/juggernaut-devops/terraform/configs/nyc3-prod-data-excalibur-unmanaged/*" -r ~/Code/juggernaut-devops szheng@local-etl:~/'
+# run_rsync; fswatch -o . | while read f; do run_rsync; done
+```
+
+
+## GCP
+
+Local IAP tunnel
+```
+
+gcloud compute start-iap-tunnel <box name>  22 --local-host-port=localhost:2222 --zone=us-central1-a --project <GCP_projecT> 
+
 ```
