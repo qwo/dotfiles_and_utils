@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    // "tmux": {
+    //     "path": "/usr/bin/tmux",
+    //     "args": [
+    //       "new-session",
+    //       "-A",
+    //       "-s",
+    //       "${input:session_id}"
+    //     ],
+    //   },
+    "tasks": [
+        {
+            "label": "set tmux",
+            "command": "tmux",
+            "args": [
+                "new-session",
+                "-A",
+                "-s",
+                "${input:session_id}"
+            ],
+            // "command": "${input:session_id}",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+      {
+        "id": "session_id",
+        "type": "promptString",
+        "description": "tmux session-id"
+        // type specific configuration attributes
+      }
+    //   {
+    //     "type": "promptString",
+    //     "id": "componentName",
+    //     "description": "Name your component.",
+    //     "default": "my-new-component"
+    //   }
+    ]
+  }
