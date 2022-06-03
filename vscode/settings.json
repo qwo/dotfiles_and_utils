@@ -1,3 +1,5 @@
+
+// /Users/stanley.zheng/Library/Application Support/Code/User/settings.json
 {
     "redhat.telemetry.enabled": false,
     "files.saveConflictResolution": "overwriteFileOnDisk",
@@ -41,7 +43,6 @@
     "sync.forceDownload": true,
     "editor.inlineSuggest.enabled": true,
     "jupyter.interactiveWindowMode": "perFile",
-    "window.zoomLevel": 1,
 
     // "TMUX SETTING"
     "terminal.integrated.profiles.linux": {
@@ -51,9 +52,10 @@
           "new-session",
           "-A",
           "-s",
-          "${input:session_id}"
+          "main"
+          // "${input:session_id}"
         ],
       },
     },
-    "terminal.integrated.defaultProfile.linux": "tmux",
+    "terminal.integrated.defaultProfile.linux": "bash",
 }
