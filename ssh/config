@@ -1,0 +1,17 @@
+
+
+<!-- Host 
+	User stanzheng
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/github/id_rsa.pub -->
+
+
+HostName local_etl
+   UseKeychain yes
+   AddKeysToAgent yes
+   IdentityFile ~/.ssh/google_compute_engine
+   User szheng
+
+
+https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
