@@ -1,0 +1,61 @@
+
+// /Users/stanley.zheng/Library/Application Support/Code/User/settings.json
+{
+    "redhat.telemetry.enabled": false,
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "editor.formatOnType": true,
+    "debug.onTaskErrors": "debugAnyway",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "explorer.confirmDelete": false,
+    "editor.largeFileOptimizations": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.wordWrap": "on",
+    "tabnine.experimentalAutoImports": true,
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "liveshare.audio.startCallOnShare": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "sync.gist": "9a0775b402490d6ae4dc4524461f02e2",
+    "sync.autoDownload": true,
+    "settingsSync.ignoredExtensions": [
+    "GitHub.copilot"
+    
+    ],
+    "settingsSync.ignoredSettings": [
+        
+    
+    ],
+    "sync.autoUpload": true,
+    "sync.forceUpload": true,
+    "sync.forceDownload": true,
+    "editor.inlineSuggest.enabled": true,
+    "jupyter.interactiveWindowMode": "perFile",
+
+    // "TMUX SETTING"
+    "terminal.integrated.profiles.linux": {
+      "tmux": {
+        "path": "/usr/bin/tmux",
+        "args": [
+          "new-session",
+          "-A",
+          "-s",
+          "main"
+          // "${input:session_id}"
+        ],
+      },
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+}
