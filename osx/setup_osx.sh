@@ -53,7 +53,8 @@ brew install fswatch
 # installing GCP
 curl https://sdk.cloud.google.com | bash
 echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
-
+# AWS CLI
+brew install awscli
 
 #install 
 ## install terraform
