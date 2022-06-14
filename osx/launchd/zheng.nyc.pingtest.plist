@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+	<key>Label</key>
+	<string>nyc.zheng.test</string>
+	<key>Disabled</key>
+	<false/>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/Users/stanley.zheng/Code/personal/dotfiles_and_utils/osx/launchd/pingtest.sh</string>
+        </array>
+        <key>OnDemand</key>
+        <false/>
+
+        <key>StartInterval</key>
+        <integer>60</integer>
+
+        <key>StandardErrorPath</key>
+        <string>/tmp/AlTest1.err</string>
+
+        <key>StandardOutPath</key>
+        <string>/tmp/AlTest1.out</string>
+    </dict>
+</plist>
