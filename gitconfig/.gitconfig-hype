@@ -1,0 +1,5 @@
+[user]
+name = Stanley Zheng
+email = stanley@hyperdrive.tech
+[core]
+ sshCommand = ssh -i ~/.ssh/hype/id_rsa

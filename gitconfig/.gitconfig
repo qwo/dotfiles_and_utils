@@ -3,7 +3,9 @@
 	name = Stanley Zheng
 
 [includeIf "gitdir:~/Code/personal/"]
-  path = .gitconfig-company_b
+  path = .gitconfig-personal
+[includeIf "gitdir:~/Code/hype/"]
+  path = .gitconfig-hype
 [credential "github.com"]
 	useHttpPath = true
 [credential]
