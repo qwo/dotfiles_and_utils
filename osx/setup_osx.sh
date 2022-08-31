@@ -44,6 +44,7 @@ mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install dev tools
+brew install antigen
 brew install python@3.9
 brew install node
 brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
@@ -56,6 +57,11 @@ curl https://sdk.cloud.google.com | bash
 echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
 # AWS CLI
 brew install awscli
+
+
+# copy dotfile configs
+cp -r .* ~/
+cp -r ../gitconfig ~/.gitconfig
 
 #install 
 ## install terraform
