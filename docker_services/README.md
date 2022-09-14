@@ -1,6 +1,7 @@
 
 ## use docker daemon compatible on osx
-alias doocker='lima nerdctl'
+alias docker='lima nerdctl'
+limectl start default
 
 # Postgres
 docker run --name postgres-postgis  -p 5432:5432 -v postgres-data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=<Password> -d mdillon/postgis
