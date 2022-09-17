@@ -4,22 +4,20 @@
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"  # should check this 
 
-# homebrew-cask
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# homebrew for macos apps # install from app store 
 brew install mas
+## uses mas to install from MAC APP STORE
+mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
+mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
+mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
-
-# unix_tools
-brew install lima
-brew install jq # reads json on cli
-brew install wget
-brew install fzf
-brew install git-extras
-brew install gh
-brew install coreutils
-
-# browser
+# browsers
 brew install --cask firefox
 brew install --cask google-chrome
 
@@ -35,28 +33,46 @@ brew install --cask dash
 brew install --cask bitwarden
 brew install tailscale
 
-## uses mas to install from MAC APP STORE
-mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
-mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
-mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
-# install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# donctain tools 
+brew install lima
+brew install wget
+brew install coreutils
 
-# install dev tools
-brew install antigen
-brew install python@3.9
-brew install node
+# git tools 
+brew install git-extras
+brew install gh
+brew install git-blame
+brew install pre-commit 
+
+# install unix applications / config tools 
+
+# brew install antigen # not maintained anymore, for ZSH plugin management, find base alternative
+brew install fswatch # filewatch tool that can be used in combo with rsync 
+brew install jq # reads json on cli
+# brew install saulpw/vd/visidata # cool visualizing data tabular!
+brew install wget
+
+# CLI helpers / tools 
+brew install fzf
+brew install gawk
+
+
+
+# programming language / dependencies 
+## install java
+brew install python@3.9 
+# brew install node
+brew install terraform terraform-docs tflint
 brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
-brew install pre-commit gawk terraform-docs tflint
 brew install poetry
-brew install fswatch
 
-# installing GCP
+# installing cloud tools and vendor tools 
 curl https://sdk.cloud.google.com | bash
-echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
-# AWS CLI
-brew install awscli
+brew install awscli # AWS CLI
+
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc 
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.bashrc 
 
 
 # copy dotfile configs
@@ -65,7 +81,6 @@ cp -r ../gitconfig ~/.gitconfig
 
 #install 
 ## install terraform
-## install java
 ## install git-blame 
 ## install python
 ## install autodoc 
