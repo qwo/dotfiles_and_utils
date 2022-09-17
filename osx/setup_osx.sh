@@ -17,27 +17,12 @@ mas install 937984704 # install amphetamine # keeps your computer awake # https:
 mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
-# browsers
-brew install --cask firefox
-brew install --cask google-chrome
 
-# apps / # development
-brew install --cask visual-studio-code
-brew install --cask obsidian
-brew install --cask rectangle
-brew install --cask spotify
-brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
-brew install --cask signal
-brew install --cask dbeaver-community
-brew install --cask dash
-brew install --cask bitwarden
-brew install tailscale
-
-
-# donctain tools 
-brew install lima
-brew install wget
+# essentials / system libraries / tools
 brew install coreutils
+brew install --cask google-chrome
+# brew install java # if you need the JDK 
+brew install wget
 
 # git tools 
 brew install git-extras
@@ -45,27 +30,31 @@ brew install gh
 brew install git-blame
 brew install pre-commit 
 
-# install unix applications / config tools 
+# desktop software development
+brew install --cask visual-studio-code # essential 
+# brew install --cask dash # dont use this much anymore 
+brew install --cask dbeaver-community
+brew install --cask rectangle
 
+# programming language / dependencies 
+brew install python@3.9 poetry
+# brew install node
+brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
+
+# container tools  
+brew install lima # combo tool to do containerization on MACOS with nerdctl
+brew install nerdctl
+brew install --cask rancher
+
+# install unix applications / config tools 
 # brew install antigen # not maintained anymore, for ZSH plugin management, find base alternative
 brew install fswatch # filewatch tool that can be used in combo with rsync 
 brew install jq # reads json on cli
 # brew install saulpw/vd/visidata # cool visualizing data tabular!
-brew install wget
 
 # CLI helpers / tools 
 brew install fzf
 brew install gawk
-
-
-
-# programming language / dependencies 
-## install java
-brew install python@3.9 
-# brew install node
-brew install terraform terraform-docs tflint
-brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
-brew install poetry
 
 # installing cloud tools and vendor tools 
 curl https://sdk.cloud.google.com | bash
@@ -92,8 +81,14 @@ cp -r ../gitconfig ~/.gitconfig
 ## Rainbow CSV https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 # visual studio code
 
-## BLACK FORMATTING / AUTOPEP8 ??
+
+# desktop apps 
+brew install --cask bitwarden
+brew install --cask firefox
+brew install --cask obsidian
+brew install --cask signal
+brew install --cask spotify
+brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
+brew install tailscale
 
 
-### OSX
-## RE-ARRANGE MY MAC KEYBOARD STUFF
