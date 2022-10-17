@@ -67,3 +67,7 @@ Local IAP tunnel
 gcloud compute start-iap-tunnel <box name>  22 --local-host-port=localhost:2222 --zone=us-central1-a --project <GCP_projecT> 
 
 ```
+## Env Variables
+# set from xargs
+https://mokacoding.com/blog/env-xargs/
+`env $(cat .env | grep -v "#" | xargs) your_command_expecting_env_vars`

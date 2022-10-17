@@ -1,0 +1,5 @@
+[user]
+name = Stanley Zheng
+email = stanley@cyber.nyc.gov
+[core]
+ sshCommand = ssh -i ~/.ssh/work/id_rsa

@@ -4,62 +4,72 @@
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"  # should check this 
 
-# homebrew-cask
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# homebrew for macos apps # install from app store 
 brew install mas
-
-
-# unix_tools
-brew install lima
-brew install jq # reads json on cli
-brew install wget
-brew install fzf
-brew install git-extras
-brew install gh
-brew install coreutils
-
-# browser
-brew install --cask firefox
-brew install --cask google-chrome
-
-# apps / # development
-brew install --cask visual-studio-code
-brew install --cask obsidian
-brew install --cask rectangle
-brew install --cask spotify
-brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
-brew install --cask signal
-brew install --cask dbeaver-community
-brew install --cask dash
-brew install --cask bitwarden
-brew install tailscale
-
 ## uses mas to install from MAC APP STORE
 mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
 mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
-# install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# install dev tools
-brew install python@3.9
-brew install node
-brew install warrensbox/tap/tfswitch # use to install terraform `tfswtich 0.13.7`
-brew install pre-commit gawk terraform-docs tflint
-brew install poetry
-brew install fswatch
+# essentials / system libraries / tools
+brew install coreutils
+brew install --cask google-chrome
+# brew install java # if you need the JDK 
+brew install wget
 
-# installing GCP
+# git tools 
+brew install git-extras
+brew install gh
+brew install git-blame
+brew install pre-commit 
+
+# desktop software development
+brew install --cask visual-studio-code # essential 
+# brew install --cask dash # dont use this much anymore 
+brew install --cask dbeaver-community
+brew install --cask rectangle
+
+# programming language / dependencies 
+brew install python@3.9 poetry
+# brew install node
+brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
+
+# container tools  
+brew install lima # combo tool to do containerization on MACOS with nerdctl
+brew install nerdctl
+brew install --cask rancher
+
+# install unix applications / config tools 
+# brew install antigen # not maintained anymore, for ZSH plugin management, find base alternative
+brew install fswatch # filewatch tool that can be used in combo with rsync 
+brew install jq # reads json on cli
+# brew install saulpw/vd/visidata # cool visualizing data tabular!
+
+# CLI helpers / tools 
+brew install fzf
+brew install gawk
+
+# installing cloud tools and vendor tools 
 curl https://sdk.cloud.google.com | bash
-echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc
-# AWS CLI
-brew install awscli
+brew install awscli # AWS CLI
+
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc 
+echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.bashrc 
+
+
+# copy dotfile configs
+cp -r .* ~/
+cp -r ../gitconfig ~/.gitconfig
 
 #install 
 ## install terraform
-## install java
 ## install git-blame 
 ## install python
 ## install autodoc 
@@ -71,8 +81,14 @@ brew install awscli
 ## Rainbow CSV https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 # visual studio code
 
-## BLACK FORMATTING / AUTOPEP8 ??
+
+# desktop apps 
+brew install --cask bitwarden
+brew install --cask firefox
+brew install --cask obsidian
+brew install --cask signal
+brew install --cask spotify
+brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
+brew install tailscale
 
 
-### OSX
-## RE-ARRANGE MY MAC KEYBOARD STUFF

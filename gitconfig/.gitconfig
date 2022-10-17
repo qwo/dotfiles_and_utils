@@ -6,6 +6,8 @@
   path = .gitconfig-personal
 [includeIf "gitdir:~/Code/hype/"]
   path = .gitconfig-hype
+[includeIf "gitdir:~/Code/work/"]
+  path = .gitconfig-work
 [credential "github.com"]
 	useHttpPath = true
 [credential]
