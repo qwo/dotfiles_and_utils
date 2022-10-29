@@ -18,6 +18,11 @@ mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 
 
+## setup dotfiles
+cp -r .* ~/
+cp -r ../gitconfig/* ~/
+
+
 # essentials / system libraries / tools
 brew install coreutils
 brew install --cask google-chrome
@@ -57,16 +62,11 @@ brew install fzf
 brew install gawk
 
 # installing cloud tools and vendor tools 
-curl https://sdk.cloud.google.com | bash
+# --disable-prompts Disables prompts. Prompts are always disabled when there is no controlling tty.
+curl https://sdk.cloud.google.com | bash -s -- --disable-prompts 
 brew install awscli # AWS CLI
 
-echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.zshrc 
-echo PATH=$PATH:/Users/$USER/google-cloud-sdk/bin/ >> ~/.bashrc 
-
-
-# copy dotfile configs
-cp -r .* ~/
-cp -r ../gitconfig ~/.gitconfig
+source ~/.zshrc
 
 #install 
 ## install terraform
@@ -84,7 +84,7 @@ cp -r ../gitconfig ~/.gitconfig
 
 # desktop apps 
 brew install --cask bitwarden
-brew install --cask firefox
+brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask signal
 brew install --cask spotify
@@ -92,3 +92,4 @@ brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
 brew install tailscale
 
 
+source ~/.zshrc
