@@ -72,7 +72,8 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases
 
-set PATH+=/opt/homebrew/bin/tmux
+# for tmux first
+PATH=PATH:$PATH:/opt/homebrew/bin
 plugins=(
     aliases # aliases cheatsheet - list aliases based on the plugins that you have enabled
     autoenv	# automatically execs script on changing dir (.env file)
@@ -84,7 +85,6 @@ plugins=(
     tmux
     tmuxinator
     web-search # websearch
-    
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -130,11 +130,14 @@ source /opt/homebrew/opt/autoenv/activate.sh
 
 ## ADD each path here and it will combo
 arraylist=(
-    /opt/homebrew/bin/
+    # /opt/homebrew/bin/ # setabove
     $HOME/google-cloud-sdk/bin
 )
 for cmd in "${arraylist[@]}"; 
     do PATH+=:$cmd
 done
 
+#FZF https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#Zoxide https://github.com/ajeetdsouza/zoxide#step-1-install-zoxide
+eval "$(zoxide init zsh)"
