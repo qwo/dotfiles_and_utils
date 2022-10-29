@@ -1,7 +1,6 @@
 [user]
 	email = stanley@zheng.nyc
 	name = Stanley Zheng
-
 [includeIf "gitdir:~/Code/"]
   path = .gitconfig-personal
 [includeIf "gitdir:~/Code/hype/"]

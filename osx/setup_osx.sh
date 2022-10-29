@@ -58,6 +58,8 @@ brew install jq # reads json on cli
 # brew install saulpw/vd/visidata # cool visualizing data tabular!
 
 # CLI helpers / tools 
+brew install zoxide
+brew install tmux
 brew install fzf
 brew install gawk
 
@@ -93,3 +95,6 @@ brew install tailscale
 
 
 source ~/.zshrc
+
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install

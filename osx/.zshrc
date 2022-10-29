@@ -71,12 +71,20 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases
+
+set PATH+=/opt/homebrew/bin/tmux
 plugins=(
     aliases # aliases cheatsheet - list aliases based on the plugins that you have enabled
     autoenv	# automatically execs script on changing dir (.env file)
     cp # 	cp with progress bar (rsync)
     extract # 'x' alias - swiss knife for archive extracting
     git # git ofc
+    genpass # cli generate password
+    ssh-agent # ssh agent https://www.ssh.com/academy/ssh/agent#:~:text=The%20ssh%2Dagent%20is%20a,sign%2Don%20(SSO).
+    tmux
+    tmuxinator
+    web-search # websearch
+    
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,9 +130,11 @@ source /opt/homebrew/opt/autoenv/activate.sh
 
 ## ADD each path here and it will combo
 arraylist=(
+    /opt/homebrew/bin/
     $HOME/google-cloud-sdk/bin
 )
 for cmd in "${arraylist[@]}"; 
     do PATH+=:$cmd
 done
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
