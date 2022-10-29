@@ -140,4 +140,5 @@ done
 #FZF https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #Zoxide https://github.com/ajeetdsouza/zoxide#step-1-install-zoxide
-source ~/.zoxide_config.zsh # use "z FOLDER"
+eval "$(zoxide init zsh)"
+# source ~/.zoxide_config.zsh # use "z FOLDER"
