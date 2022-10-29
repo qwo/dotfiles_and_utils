@@ -79,18 +79,23 @@ plugins=(
     autoenv	# automatically execs script on changing dir (.env file)
     battery # battery cool? https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/battery
     brew # homebrew duh
+    copyfile # 
+    copybuffer # CTRL+O
     cp # 	cp with progress bar (rsync)
     extract # 'x' alias - swiss knife for archive extracting
     git # git ofc
     genpass # cli generate password
     golang #golang build tool
+    jq-zsh-plugin 
     mvn # maven
     redis-cli # rediscli
     ssh-agent # ssh agent https://www.ssh.com/academy/ssh/agent#:~:text=The%20ssh%2Dagent%20is%20a,sign%2Don%20(SSO).
     tmux
     tmuxinator
     web-search # websearch
+    zsh-autosuggestions 
 )
+# more under ls ~/.oh-my-zsh/plugins
 
 source $ZSH/oh-my-zsh.sh
 

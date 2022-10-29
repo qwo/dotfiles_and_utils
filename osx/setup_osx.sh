@@ -93,8 +93,14 @@ brew install --cask spotify
 brew install --cask tomighty ### NOT VERIFIED UNFORTUNATELY
 brew install tailscale
 
+## optional
+# brew install --cask intellij-idea
+# brew install --cask datagrip
 
 source ~/.zshrc
 
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
+
+# install plugins
+git clone https://github.com/reegnz/jq-zsh-plugin --branch v0.4.0 --single-branch ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/jq-zsh-plugin
