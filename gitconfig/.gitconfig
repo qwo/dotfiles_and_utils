@@ -1,5 +1,5 @@
 [user]
-	email = szheng@cyber.nyc.gov
+	email = stanley@zheng.nyc
 	name = Stanley Zheng
 
 [includeIf "gitdir:~/Code/personal/"]

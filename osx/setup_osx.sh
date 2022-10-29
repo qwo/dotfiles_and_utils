@@ -20,7 +20,7 @@ mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft
 
 ## setup dotfiles
 cp -r .* ~/
-cp -r ../gitconfig/* ~/
+cp -r ../gitconfig/.* ~/
 
 
 # essentials / system libraries / tools
