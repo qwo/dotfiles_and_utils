@@ -43,13 +43,18 @@ brew install --cask rectangle
 
 # programming language / dependencies 
 brew install python@3.9 poetry
-# brew install node
+brew install node n
 brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
 
 # container tools  
+brew install buildkit
+brew install docker-compose docker-credential-helper
 brew install lima # combo tool to do containerization on MACOS with nerdctl
 brew install nerdctl
 brew install --cask rancher
+
+# data
+brew install postgresql
 
 # install unix applications / config tools 
 # brew install antigen # not maintained anymore, for ZSH plugin management, find base alternative
