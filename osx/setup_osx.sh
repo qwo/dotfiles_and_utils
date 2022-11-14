@@ -2,6 +2,8 @@
 
 ## setup a new OSX machine 
 
+mkdir ~/.ssh
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"  # should check this 
@@ -58,9 +60,10 @@ brew install postgresql
 
 # install unix applications / config tools 
 # brew install antigen # not maintained anymore, for ZSH plugin management, find base alternative
+brew install entr
 brew install fswatch # filewatch tool that can be used in combo with rsync 
 brew install jq # reads json on cli
-# brew install saulpw/vd/visidata # cool visualizing data tabular!
+brew install saulpw/vd/visidata # cool visualizing data tabular!
 
 # CLI helpers / tools 
 brew install zoxide
@@ -76,7 +79,6 @@ brew install awscli # AWS CLI
 source ~/.zshrc
 
 #install 
-## install terraform
 ## install git-blame 
 ## install python
 ## install autodoc 
