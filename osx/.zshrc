@@ -142,6 +142,10 @@ source /opt/homebrew/opt/autoenv/activate.sh
 arraylist=(
     # /opt/homebrew/bin/ # setabove
     $HOME/google-cloud-sdk/bin
+    $HOME/.cargo/bin
+    $HOME/.local/bin
+    $HOME/.yarn/bin
+    $HOME/go/bin
 )
 for cmd in "${arraylist[@]}"; 
     do PATH+=:$cmd

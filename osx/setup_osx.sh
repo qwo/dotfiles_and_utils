@@ -26,6 +26,7 @@ cp -r ../gitconfig/.* ~/
 
 
 # essentials / system libraries / tools
+softwareupdate --install-rosetta # rosetta
 brew install coreutils
 brew install --cask google-chrome
 # brew install java # if you need the JDK 
@@ -47,6 +48,8 @@ brew install --cask rectangle
 brew install python@3.9 poetry
 brew install node n
 brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
+brew install nomad
+brew install golang
 
 # container tools  
 brew install buildkit
