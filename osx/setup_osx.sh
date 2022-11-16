@@ -24,6 +24,12 @@ mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft
 cp -r .* ~/
 cp -r ../gitconfig/.* ~/
 
+# programming language / dependencies 
+brew install python@3.9 poetry
+brew install node nvm
+brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
+brew install nomad
+brew install golang
 
 # essentials / system libraries / tools
 softwareupdate --install-rosetta # rosetta
@@ -43,13 +49,6 @@ brew install --cask visual-studio-code # essential
 # brew install --cask dash # dont use this much anymore 
 brew install --cask dbeaver-community
 brew install --cask rectangle
-
-# programming language / dependencies 
-brew install python@3.9 poetry
-brew install node n
-brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
-brew install nomad
-brew install golang
 
 # container tools  
 brew install buildkit
