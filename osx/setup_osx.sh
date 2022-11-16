@@ -76,7 +76,9 @@ brew install gawk
 # installing cloud tools and vendor tools 
 # --disable-prompts Disables prompts. Prompts are always disabled when there is no controlling tty.
 curl https://sdk.cloud.google.com | bash -s -- --disable-prompts 
-brew install awscli # AWS CLI
+brew install awscli # AWS CLI 
+# brew tap synfinatic/aws-sso-cli
+go install github.com/synfinatic/aws-sso-cli/cmd/aws-sso@latest
 
 source ~/.zshrc
 

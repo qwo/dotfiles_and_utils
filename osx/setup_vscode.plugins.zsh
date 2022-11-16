@@ -28,6 +28,7 @@ arraylist=(
     christian-kohler.path-intellisense
     bradlc.vscode-tailwindcss
     bungcip.better-toml
+    eamodio.gitlens
     GitHub.codespaces
     GitHub.copilot
     GitHub.copilot-nightly
