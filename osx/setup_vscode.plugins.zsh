@@ -26,6 +26,7 @@ code --enable-proposed-api (<extension-id>)
 
 arraylist=(
     christian-kohler.path-intellisense
+    coolbear.systemd-unit-file
     bradlc.vscode-tailwindcss
     bungcip.better-toml
     eamodio.gitlens
@@ -33,6 +34,8 @@ arraylist=(
     GitHub.copilot
     GitHub.copilot-nightly
     hashicorp.terraform
+    hashicorp.hcl
+    hashicorp.sentinel
     LeetCode.vscode-leetcode
     mechatroner.rainbow-csv
     mgesbert.python-path
@@ -52,6 +55,7 @@ arraylist=(
     ms-vscode.cpptools
     ms-vscode.powershell
     ms-vsliveshare.vsliveshare
+    ms-vscode.makefile-tools
     platformio.platformio-ide
     redhat.java
     redhat.vscode-xml
@@ -65,6 +69,7 @@ arraylist=(
     vscjava.vscode-maven
     waderyan.gitblame
     yzhang.markdown-all-in-one
+    ms-python.black-formatter
 )
 for i in "${arraylist[@]}"; 
     do code --install-extension $i

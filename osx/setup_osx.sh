@@ -18,6 +18,7 @@ brew install mas
 mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
 mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
+mas install 585829637 #TODOIST https://apps.apple.com/us/app/todoist-to-do-list-tasks/id585829637?mt=12
 
 
 ## setup dotfiles
@@ -27,7 +28,7 @@ cp -r ../gitconfig/.* ~/
 # programming language / dependencies 
 brew install python@3.9 poetry
 brew install node nvm
-brew install terraform terraform-docs tflint warrensbox/tap/tfswitch 
+brew install terraform-docs tflint warrensbox/tap/tfswitch  #terraform conflicts with tfswitch
 brew install nomad
 brew install golang
 
