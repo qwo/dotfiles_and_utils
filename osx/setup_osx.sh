@@ -19,6 +19,7 @@ mas install 937984704 # install amphetamine # keeps your computer awake # https:
 mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
 mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
 mas install 585829637 #TODOIST https://apps.apple.com/us/app/todoist-to-do-list-tasks/id585829637?mt=12
+mas install 1352778147 # https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744 bitwarden better version
 
 
 ## setup dotfiles
@@ -97,7 +98,6 @@ source ~/.zshrc
 
 
 # desktop apps 
-brew install --cask bitwarden
 brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask signal
