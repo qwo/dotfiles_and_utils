@@ -98,6 +98,7 @@ source ~/.zshrc
 
 
 # desktop apps 
+brew install --cask insomnia
 brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask signal
