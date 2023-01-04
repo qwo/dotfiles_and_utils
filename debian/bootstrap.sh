@@ -5,6 +5,8 @@ sudo apt-get update -y
 # install system libraries
 sudo apt-get install curl wget git -y 
 
+sudo apt-get install -y build-essential
+
 #secret saving
 
 sudo apt-get install libsecret-1-0 libsecret-1-dev
