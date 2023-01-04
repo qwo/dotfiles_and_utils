@@ -11,3 +11,6 @@ https://stackoverflow.com/questions/68775869/message-support-for-password-authen
 # git config --global credential.helper cache
 # $ git config --global --unset credential.helper
 # $ git config --system --unset credential.helper
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+
+https://stackoverflow.com/questions/5343068/is-there-a-way-to-cache-https-credentials-for-pushing-commits
