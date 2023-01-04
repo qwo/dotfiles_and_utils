@@ -12,15 +12,39 @@ eval "$(/opt/homebrew/bin/brew shellenv)"  # should check this
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
-# homebrew for macos apps # install from app store 
-brew install mas
-## uses mas to install from MAC APP STORE
-mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
-mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
-mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
-mas install 585829637 #TODOIST https://apps.apple.com/us/app/todoist-to-do-list-tasks/id585829637?mt=12
-mas install 1352778147 # https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744 bitwarden better version
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform   
+    # homebrew for macos apps # install from app store 
+    brew install mas
+    ## uses mas to install from MAC APP STORE
+    mas install 937984704 # install amphetamine # keeps your computer awake # https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
+    mas install 1470499037 # https://apps.apple.com/us/app/tailscale/id1470499037
+    mas install 1295203466 # Windows RDP OSX https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12
+    mas install 585829637 #TODOIST https://apps.apple.com/us/app/todoist-to-do-list-tasks/id585829637?mt=12
+    mas install 1352778147 # https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744 bitwarden better version
+     # brew install --cask dash # dont use this much anymore 
+    brew install --cask dbeaver-community
+    brew install --cask rectangle
+    brew install lima # combo tool to do containerization on MACOS with nerdctl
+    brew install nerdctl
+    brew install --cask rancher
 
+    # essentials / system libraries / tools
+    softwareupdate --install-rosetta # rosetta
+    brew install coreutils
+    brew install --cask google-chrome
+
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under GNU/Linux platform
+    sudo apt-get update -y 
+    # install system libraries
+    sudo apt-get install curl wget git -y 
+
+    sudo apt-get install -y build-essential
+
+    #secret saving
+    sudo apt install gnome-keyring seahorse
+fi
 
 ## setup dotfiles
 cp -r .* ~/
@@ -33,11 +57,6 @@ brew install terraform-docs tflint warrensbox/tap/tfswitch  #terraform conflicts
 brew install nomad
 brew install golang
 
-# essentials / system libraries / tools
-softwareupdate --install-rosetta # rosetta
-brew install coreutils
-brew install --cask google-chrome
-# brew install java # if you need the JDK 
 brew install wget
 
 # git tools 
@@ -48,16 +67,11 @@ brew install pre-commit
 
 # desktop software development
 brew install --cask visual-studio-code # essential 
-# brew install --cask dash # dont use this much anymore 
-brew install --cask dbeaver-community
-brew install --cask rectangle
 
 # container tools  
 brew install buildkit
 brew install docker-compose docker-credential-helper
-brew install lima # combo tool to do containerization on MACOS with nerdctl
-brew install nerdctl
-brew install --cask rancher
+
 
 # data
 brew install postgresql

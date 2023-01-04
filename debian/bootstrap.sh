@@ -9,7 +9,7 @@ sudo apt-get install -y build-essential
 
 #secret saving
 
-sudo apt-get install libsecret-1-0 libsecret-1-dev
+sudo apt install gnome-keyring seahorse
 
 
 # install python libraries 
