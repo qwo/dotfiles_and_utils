@@ -146,6 +146,7 @@ arraylist=(
     $HOME/.local/bin
     $HOME/.yarn/bin
     $HOME/go/bin
+    $HOME/.emacs.d/bin
 )
 for cmd in "${arraylist[@]}"; 
     do PATH+=:$cmd
