@@ -13,3 +13,23 @@
 	helper = osxkeychain
 [core]
 	autocrlf = false
+
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    new-branch = !sh -c "git checkout main && git pull && git checkout -b \"$1\"" -
+    st = status -sb
+    lg = log --graph --oneline --decorate
+    ll = log --pretty=format:\"%C(yellow)%h%Creset %ad %C(green)%<(15)%an%Creset %C(red)%d%Creset %s\" --date=short --graph
+    amend=commit --amend
+    rb = "!f() { git rebase -i \"$1\"^; }; f"
+    branches = "!git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short) %(subject)'"
+    nb = "!sh -c 'git checkout main && git pull && git checkout -b \"$1\"' -"
+    pr-create = "!gh pr create"
+    pr-list = "!gh pr list"
+    repo-view = "!gh repo view --web"
+[commit]
+    gpgsign = true
