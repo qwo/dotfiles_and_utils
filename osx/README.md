@@ -18,6 +18,5 @@ trick to remove everything from dock
 ```
 https://apple.stackexchange.com/questions/360755/restrict-macos-from-automatically-enabling-keep-in-dock-after-rearranging-dock
 
-echo ~/Library/Preferences/com.apple.dock.plist |\
-  entr -s 'defaults delete com.apple.dock persistent-apps && killall Dock'
+defaults write com.apple.dock persistent-apps -array && killall Dock
 ```
